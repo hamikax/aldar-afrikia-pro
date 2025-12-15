@@ -18,7 +18,7 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.contact': { ar: 'اتصل بنا', en: 'Contact Us' },
 
   // Hero
-  'hero.company': { ar: 'شركة الدار الإفريقية', en: 'Al-Dar Al-Afrikia Company' },
+  'hero.company': { ar: 'شركة الدار الإفريقية', en: 'Dar - Africa Company' },
   'hero.tagline': { 
     ar: 'خبرة منذ 1997 في توريد وصيانة أجهزة وتقنيات الطباعة والحاسوب', 
     en: 'Providing printing and computer technology solutions since 1997' 
@@ -41,7 +41,7 @@ const translations: Record<string, Record<Language, string>> = {
   'about.subtitle': { ar: 'خبرة تمتد لأكثر من 27 عاماً', en: 'Over 27 Years of Excellence' },
   'about.text': { 
     ar: 'شركة الدار الإفريقية تأسست عام 1997، وتُعد من الشركات الرائدة في ليبيا في مجال توريد آلات التصوير، الأحبار، أجهزة الكمبيوتر وملحقاتها، إضافة إلى الصيانة والدعم الفني باحترافية عالية.', 
-    en: 'Al-Dar Al-Afrikia Company was established in 1997 and is one of Libya\'s leading companies in photocopiers, inks, computer devices, accessories, spare parts, and professional maintenance services.' 
+    en: 'Dar - Africa Company was established in 1997 and is one of Libya\'s leading companies in photocopiers, inks, computer devices, accessories, spare parts, and professional maintenance services.' 
   },
   'about.since': { ar: 'منذ عام', en: 'Since' },
   'about.clients': { ar: 'عميل راضٍ', en: 'Happy Clients' },
