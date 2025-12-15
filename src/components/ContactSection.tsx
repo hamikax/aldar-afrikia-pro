@@ -28,7 +28,7 @@ export const ContactSection: React.FC = () => {
     {
       icon: MapPin,
       titleKey: 'contact.address',
-      lines: [t('contact.address.line1'), t('contact.address.line2')],
+      lines: [t('contact.address.line1')],
     },
     {
       icon: Phone,
@@ -119,23 +119,29 @@ export const ContactSection: React.FC = () => {
               </motion.div>
             ))}
 
-            {/* Map Placeholder */}
-            <motion.div
+            {/* Google Maps Embed */}
+            <motion.a
+              href="https://maps.app.goo.gl/jvLHkp7ZgiBnwmMv9"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="card-elevated overflow-hidden h-64"
+              className="card-elevated overflow-hidden h-64 block group cursor-pointer"
             >
-              <div className="w-full h-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center relative">
                 <div className="text-center">
-                  <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
+                  <MapPin className="w-12 h-12 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
                   <p className={`text-muted-foreground ${isRTL ? 'font-arabic' : 'font-sans'}`}>
                     {isRTL ? 'طرابلس، ليبيا' : 'Tripoli, Libya'}
                   </p>
+                  <p className={`text-xs text-primary mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isRTL ? 'font-arabic' : 'font-sans'}`}>
+                    {isRTL ? 'اضغط لفتح الخريطة' : 'Click to open map'}
+                  </p>
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           </motion.div>
 
           {/* Contact Form */}
