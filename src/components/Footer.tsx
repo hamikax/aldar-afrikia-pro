@@ -66,6 +66,22 @@ export const Footer: React.FC = () => {
             </AnimatePresence>
           </motion.div>
         </div>
+
+        {/* Credit Line */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mt-8 pt-6 border-t border-background/20 text-center"
+        >
+          <p className="text-xs opacity-50">
+            Edited by : Access LY || شركة آكسس
+          </p>
+          <p className="text-xs opacity-50 mt-1">
+            +218910772495 // +218920987211
+          </p>
+        </motion.div>
       </div>
     </footer>
   );
